@@ -33,3 +33,4 @@ then change setup for Wire object and initialize
 ```
 
 for using with LEDs for blink, remember the PCF8574 pins are open collector! Writing a "1" means turning LED off.
+Because not all port pins are used, there seems to be some interference between the pins. Writing a zero to the PCF8574 didn't light up all LEDs on P0 to P4. First pulling all unused pins to 3V3 corrects this behavior.
